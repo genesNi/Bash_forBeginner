@@ -8,9 +8,9 @@ Unix is widely used in bioinformatics because of its flexibility, scalability, a
 HOW TO WORK WITH FILES AND DIRECTORIES
 
 use `mkdir` to make directory/folder and `rmdir` to remove directory/folder
-```bash```
-```mkdir NameOfFolder```
-```mkdir Salmon```
+```bash
+   mkdir NameOfFolder
+   mkdir Salmon```
 
 use `wget` to download files, reference genome, scripts, software, batch download of files within loops 
 
