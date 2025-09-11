@@ -6,12 +6,14 @@ Unix is a computer operating system best known for its powerful command-line int
 Unix is widely used in bioinformatics because of its flexibility, scalability, and powerful command-line tools. Many bioinformatics software tools and pipelines are designed to run in a Unix environment, and the command-line interface, often provided by the Bash shell, allows bioinformaticians to perform complex data analysis and manipulation tasks efficiently. In this tutorial, I’ll provide a crash course on basic Bash commands for bioinformatics, including an overview of essential Bash commands to navigate a file system and move, copy, edit files, and more.
 
 HOW TO WORK WITH FILES AND DIRECTORIES
+
 use `mkdir` to make directory/folder and `rmdir` to remove directory/folder
 ```bash```
 ```mkdir NameOfFolder```
 ```mkdir Salmon```
 
 use `wget` to download files, reference genome, scripts, software, batch download of files within loops 
+
 ```wget PasteLinkOfYourfiles/ReferenceGenome```
 ```wget  https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.annotation.gtf.gz```
 ```for i in {1..10}; do```
