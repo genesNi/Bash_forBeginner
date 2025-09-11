@@ -16,8 +16,8 @@ use `mkdir` to make directory/folder and `rmdir` to remove directory/folder
 use `wget` to download files, reference genome, scripts, software, batch download of files within loops 
 
 ```bash
-   wget PasteLinkOfYourfiles/ReferenceGenome```
-   wget  https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.annotation.gtf.gz```
+   wget PasteLinkOfYourfiles/ReferenceGenome
+   wget  https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.annotation.gtf.gz
    for i in {1..10}; do
        wget http://example.com/project_A/sample_${i}.fastq.gz
    done
