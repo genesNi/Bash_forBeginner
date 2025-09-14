@@ -38,10 +38,12 @@ cheat code for awk
     awk '{print $1, $2}' variants.vcf
 ```
  Filter for variants with a Quality score > 50         #Filtering Based on Conditions
-   ``` awk '$6 > 50' variants.vcf                            #Filtering by value
+   ```
+    awk '$6 > 50' variants.vcf                            #Filtering by value
 ```
    # Print lines that contain the word "gene"
-    awk '/gene/' annotation.gff                          #Filtering by pattern
+```
+  awk '/gene/' annotation.gff                          #Filtering by pattern
 ```
 
  2. echo “Hello” | awk options ‘pattern {action}’
