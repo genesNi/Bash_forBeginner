@@ -29,18 +29,18 @@ cheat code for awk
 ```bash
   1. awk options 'pattern {action}' file_name
 ```
-     #options:
+  #options:
         -F field separator
         -v var=value
         -f file
 
 ```   Print the chromosome and position from a VCF file      #Extracting Specific Columns
     awk '{print $1, $2}' variants.vcf
-
-    Filter for variants with a Quality score > 50         #Filtering Based on Conditions
-    awk '$6 > 50' variants.vcf                            #Filtering by value
-
-    # Print lines that contain the word "gene"
+```
+ Filter for variants with a Quality score > 50         #Filtering Based on Conditions
+   ``` awk '$6 > 50' variants.vcf                            #Filtering by value
+```
+   # Print lines that contain the word "gene"
     awk '/gene/' annotation.gff                          #Filtering by pattern
 ```
 
@@ -55,6 +55,6 @@ cheat code for awk
 
    zcat gencode.v45.basic.annotation.gtf.gz |awk -F "\t" '$3 == "transcript" { print $9 }'| tr -s ";" " "   |cut -d " " -f2,4|  sed 's/\"//g' | awk '{print $1"."$2}' > genes.txt
 ```
-cheat code for awk 
+cheat code for awk https://github.com/genesNi/Bash_forBeginner/blob/main/AWK%20Scripting.pdf
     
 
