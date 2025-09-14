@@ -8,6 +8,7 @@ Unix is widely used in bioinformatics because of its flexibility, scalability, a
 HOW TO WORK WITH FILES AND DIRECTORIES
 
 use `mkdir` to make directory/folder and `rmdir` to remove directory/folder
+
 ```bash
    mkdir NameOfFolder
    mkdir Salmon
@@ -16,9 +17,44 @@ use `mkdir` to make directory/folder and `rmdir` to remove directory/folder
 use `wget` to download files, reference genome, scripts, software, batch download of files within loops 
 
 ```bash
-   wget PasteLinkOfYourfiles/ReferenceGenome
+   wget PasteLinkOfYourfiles/ReferenceGenome  #format
    wget  https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_45/gencode.v45.annotation.gtf.gz
    for i in {1..10}; do
        wget http://example.com/project_A/sample_${i}.fastq.gz
    done
 ```
+use `awk` for pattern matching and data manipulation
+cheat code for awk 
+
+```bash
+  1. awk options 'pattern {action}' file_name
+```
+     #options:
+        -F field separator
+        -v var=value
+        -f file
+
+```   Print the chromosome and position from a VCF file      #Extracting Specific Columns
+    awk '{print $1, $2}' variants.vcf
+
+    Filter for variants with a Quality score > 50         #Filtering Based on Conditions
+    awk '$6 > 50' variants.vcf                            #Filtering by value
+
+    # Print lines that contain the word "gene"
+    awk '/gene/' annotation.gff                          #Filtering by pattern
+```
+
+ 2. echo “Hello” | awk options ‘pattern {action}’
+   #options:
+      -F field separator
+      -v var=value
+      -f file
+```bash
+   to look at gtf file
+   zless -S gencode.v45.annotation.gtf.gz | grep -v "#" | awk '$3=="gene"' | cut -f9 | head -3
+
+   zcat gencode.v45.basic.annotation.gtf.gz |awk -F "\t" '$3 == "transcript" { print $9 }'| tr -s ";" " "   |cut -d " " -f2,4|  sed 's/\"//g' | awk '{print $1"."$2}' > genes.txt
+```
+cheat code for awk 
+    
+
