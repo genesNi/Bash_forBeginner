@@ -58,5 +58,16 @@ cheat code for awk
    zcat gencode.v45.basic.annotation.gtf.gz |awk -F "\t" '$3 == "transcript" { print $9 }'| tr -s ";" " "   |cut -d " " -f2,4|  sed 's/\"//g' | awk '{print $1"."$2}' > genes.txt
 ```
 cheat code for awk https://github.com/genesNi/Bash_forBeginner/blob/main/AWK%20Scripting.pdf
-    
+
+use `sed` for filtering, editing (rename, change, delete, add) anything in your file
+
+syntax : sed 'expression' filename 
+```bash  
+sed 's/ .*//' sequences.fasta        (t uses substitution (s/) to find the first space (     ) and everything after it (.*), and replaces it with nothing.)          
+```
+This command uses the pattern ^> to match lines that start with the FASTA header indicator (>)
+```
+sed -n '/^>/p' sequences.fasta
+```
+
 
