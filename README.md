@@ -69,5 +69,5 @@ This command uses the pattern ^> to match lines that start with the FASTA header
 ```
 sed -n '/^>/p' sequences.fasta
 ```
-it has many use cases , check this cheat code 
+it has many use cases , check this cheat code https://github.com/genesNi/Bash_forBeginner/blob/main/SED%20Commands.pdf
 
