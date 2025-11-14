@@ -59,7 +59,7 @@ cheat code for awk
 ```
 cheat code for awk https://github.com/genesNi/Bash_forBeginner/blob/main/AWK%20Scripting.pdf
 
-use `sed` for filtering, editing (rename, change, delete, add) anything in your file
+use `sed` for filtering, editing (rename, change, delete, add) anything in your file. it works on any type of data , it works line by line. it is similar to awk
 
 syntax : sed 'expression' filename 
 ```bash  
@@ -69,5 +69,5 @@ This command uses the pattern ^> to match lines that start with the FASTA header
 ```
 sed -n '/^>/p' sequences.fasta
 ```
-
+it has many use cases , check this cheat code 
 
