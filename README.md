@@ -71,3 +71,24 @@ sed -n '/^>/p' sequences.fasta
 ```
 it has many use cases , check this cheat code https://github.com/genesNi/Bash_forBeginner/blob/main/SED%20Commands.pdf
 
+use `grep` for filtering
+
+syntax: `grep [options] pattern [files]`
+
+use cases;
+
+case insensitive
+`grep -i "UNix" geekfile.txt`
+
+count natches
+`grep -c "unix" geekfile.txt`
+
+show line numbers
+`grep -n "unix" geekfile.txt`
+
+specify expression with e option
+`grep –e "Agarwal" –e "Aggarwal" –e "Agrawal" geekfile.txt`
+
+to Use -f to Read Patterns from a File
+`grep –f pattern.txt  geekfile.txt`
+
