@@ -23,7 +23,7 @@ use `wget` to download files, reference genome, scripts, software, batch downloa
        wget http://example.com/project_A/sample_${i}.fastq.gz
    done
 ```
-use `awk` for pattern matching and data manipulation
+use `awk` for pattern matching and data manipulation only for formatted data like CSV or TSV etc
 cheat code for awk 
 
 ```bash
