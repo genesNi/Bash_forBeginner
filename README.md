@@ -41,6 +41,7 @@ cheat code for awk
    ```
     awk '$6 > 50' variants.vcf                            #Filtering by value
 ```
+  
    Print lines that contain the word "gene"
 ```
   awk '/gene/' annotation.gff                          #Filtering by pattern
