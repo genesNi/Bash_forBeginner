@@ -117,8 +117,7 @@ example `echo 'The path is $HOME'` Prints literally: The path is $HOME. here eve
 example `cd /etc/ `  Changes directory to the etc directory under the root.
 
 {} braces - Used for brace expansion (generating arbitrary strings).
-example `touch file_{a,b,c}.txt `  Creates three files: file_a.txt, file_b.txt, and file_c.txt.
-# touch command is used to create an empty file
+example `touch file_{a,b,c}.txt `  Creates three files: file_a.txt, file_b.txt, and file_c.txt. (touch command is used to create an empty file)
 
 [] brackets - Used for globbing (pathname expansion) to match a range or a set of characters. Also used in test commands.
 example- `ls file_[0-9].txt `  Matches files like file_1.txt, file_2.txt, etc. 
