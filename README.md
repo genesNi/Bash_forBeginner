@@ -144,7 +144,7 @@ example - `echo $USER`   Prints the name of the current user.
 ^ caret symbol- Start-of-Line Anchor- Requires the pattern that follows it to occur immediately after the newline character (i.e., at the start of the line).
 example- `grep "^>" genome.fa`   Search for lines that start with the > symbol.   (.fa )or (.fasta) - same things
 
-# - hash- it is used to show comments , like if you want to explain about some command or section in your code so you write comments.
+ hash( # ) it is used to show comments , like if you want to explain about some command or section in your code so you write comments.
 
 # File Management Commands
 
